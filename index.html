@@ -27,7 +27,8 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">      
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html" id="balance">999238923 coins</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Challenges</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="market.html">Market</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="avatar.html">Avatar</a></li>
@@ -35,6 +36,10 @@
                 </div>
             </div>
         </nav>
+        <script src="https://cdn.jsdelivr.net/npm/tronweb@4.4.0/dist/TronWeb.js"></script>
+        <!-- <script>
+        
+        </script> -->
         <!-- Page Header-->
         <header class="masthead" style="background-image: url('assets/img/home-bg-plant.png')">
             <div class="container position-relative px-4 px-lg-5">
@@ -430,6 +435,9 @@
             updateChallenge(3, 100);
             updateChallenge(4, 50);
             updateChallenge(5, 20);
-            updateChallenge(6, 20);</script>
+            updateChallenge(6, 20);
+            
+            updateBalance();
+        </script>
     </body>
 </html>
