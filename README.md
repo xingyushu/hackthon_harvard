@@ -20,9 +20,9 @@ B.User data verification:
 
 C. Record their actions (  Record the users action and reward them)
 
-          Step 1: We define some eco-friendliness actions type such as walk/step/Electric car/Resource recycle,and send the users fixed reward by the application organizer.( Through TronIDE to deploy the contract)
+  Step 1: We define some eco-friendliness actions type such as walk/step/Electric car/Resource recycle,and send the users fixed reward by the application organizer.( Through TronIDE to deploy the contract)
           
-         Step 2: Got the complete action event and it will call the different reward function of the smart contract( Tronweb to connect the UI and smart contract,embedded ABI of contract)
+  Step 2: Got the complete action event and it will call the different reward function of the smart contract( Tronweb to connect the UI and smart contract,embedded ABI of contract)
 
 ###  Frontend
 
