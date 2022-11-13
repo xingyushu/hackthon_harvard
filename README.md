@@ -25,6 +25,8 @@ C. Record their actions (  Record the users action and reward them)
   Step 1: We define some eco-friendliness actions type such as walk/step/Electric car/Resource recycle,and send the users fixed reward by the application organizer.( Through TronIDE to deploy the contract)
           
   Step 2: Got the complete action event and it will call the different reward function of the smart contract( Tronweb to connect the UI and smart contract,embedded ABI of contract)
+  
+ [An users reward transaction example](https://shasta.tronscan.org/?_ga=2.16682230.1338761535.1668274246-1179746277.1668274246#/transaction/f4aac125766c5bd2980980e99ae7e65b69c197d3bb0f0e7027408a17a28a23dc)
 
 ###  Frontend
 
