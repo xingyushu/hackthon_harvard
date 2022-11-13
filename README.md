@@ -23,4 +23,5 @@ C. Record their actions (  Record the users action and reward them)
          Step 2: Got the complete action event and it will call the different reward function of the smart contract( Tronweb to connect the UI and smart contract,embedded ABI of contract)
 
 ###  Frontend
-	We used bootstrap and tronweb to interact with our smart contracts.
+
+We used bootstrap and tronweb to interact with our smart contracts.
