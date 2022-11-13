@@ -55,7 +55,7 @@ function checkCookie() {
     // checking whether user is null or not
     if (user != "") {
         //if user is not null then alert
-        alert("Welcome again " + user);
+        console.log("Welcome again " + user);
     }
     //if user is null
     else {
@@ -64,9 +64,41 @@ function checkCookie() {
         //set cookie
         if (user != "" && user != null) {
         setCookie("username", user, 365);
-        setCookie("challenges", "000000", 365)
+        setCookie("challenges", "001010", 365)
         }
     }
 }
 
 checkCookie();
+
+function completeChallenge(num) {
+    challengeString = getCookie("challenge");
+    newString = challengeString.substring(0, num-1) + "1" + challengeString.substring(num);
+    setCookie("challenges", newString, 365);
+}
+
+function isChallengeCompleted(num) {
+    challengeString = getCookie("challenge");
+    newString = challengeString.substring(0, num-1) + "1" + challengeString.substring(num);
+    // console.log(challengeString.charAt(num-1));
+    return (challengeString.charAt(num-1)!='1');
+}
+
+function updateChallenge(num, cost) {
+    completed = isChallengeCompleted(num);
+    element = document.getElementById("portfolioModalButton"+num);
+    if (completed) {
+        element.classList.add("btn-secondary");
+        element.classList.add("disabled");
+        element.textContent = "Already Claimed.";
+    } else {
+        element.classList.add("btn-primary");
+        element.textContent = "Claim " + cost + " eco-coins!";
+    }
+}
+updateChallenge(1, 50);
+updateChallenge(2, 50);
+updateChallenge(3, 100);
+updateChallenge(4, 50);
+updateChallenge(5, 20);
+updateChallenge(6, 20);
