@@ -81,7 +81,7 @@ function isChallengeCompleted(num) {
     challengeString = getCookie("challenge");
     newString = challengeString.substring(0, num-1) + "1" + challengeString.substring(num);
     // console.log(challengeString.charAt(num-1));
-    return (challengeString.charAt(num-1)!='1');
+    return (challengeString.charAt(num-1)=='1');
 }
 
 function updateChallenge(num, cost) {
