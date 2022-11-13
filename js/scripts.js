@@ -60,7 +60,8 @@ function checkCookie() {
     //if user is null
     else {
         //take input from user
-        user = prompt("Please enter your name:", "");
+        // user = prompt("Please enter your name:", "");
+        user = "username";
         //set cookie
         if (user != "" && user != null) {
         setCookie("username", user, 365);
@@ -72,13 +73,13 @@ function checkCookie() {
 checkCookie();
 
 function completeChallenge(num) {
-    challengeString = getCookie("challenge");
+    challengeString = getCookie("challenges");
     newString = challengeString.substring(0, num-1) + "1" + challengeString.substring(num);
     setCookie("challenges", newString, 365);
 }
 
 function isChallengeCompleted(num) {
-    challengeString = getCookie("challenge");
+    challengeString = getCookie("challenges");
     newString = challengeString.substring(0, num-1) + "1" + challengeString.substring(num);
     // console.log(challengeString.charAt(num-1));
     return (challengeString.charAt(num-1)=='1');
