@@ -126,17 +126,66 @@ constructor() {
     owner = address(msg.sender);
 }
 
-    
+
+// List of possible eco-friendly actions that users can take
+// very specific tasks ex: Walking to work, Using a reusable water bottle, picking up litter
+// Car-free day (Choose to walk, bike or take public transport to reduce emissions!)
+// 50
+// 4 minute shower challenge (Save water and money at the same time)
+// 50
+// Take your own container (Bring your own bottle to get coffee or your own container to get lunch)
+// 100
+// Eat less emeat (Swap a meal with a tasty veggie alternative)
+// 50
+// Let’s switch the lights off (Remember to turn the lights off when going out)
+// 20
+// Fight food waste (Think carefully about what you buy and try composting!)
+// 50
+// Turn the heating down (Lower your heating by a few degrees to save energy and money)
+// 20
+
 function sendRewardWalk(address user,address token) public {
     require(tx.origin == owner, "only owner");
-    uint256 amount = 10**19; // 10 token
+    uint256 amount = 10*10**6; // 10 token
     ITRC20(token).transfer(user,amount);
     emit claimReward(user, amount);
 }
+  
+  
+     
+
     
 function sendRewardCar(address user,address token) public {
     require(tx.origin == owner, "only owner");
-    uint256 amount = 2*10**19; // 20 token
+    uint256 amount = 50*10**6; // 20 token
+    ITRC20(token).transfer(user,amount);
+    //user.claimedReward+=amount;
+    emit claimReward(user, amount);
+}
+
+function sendRewardMeat(address user,address token) public {
+    require(tx.origin == owner, "only owner");
+    uint256 amount = 50*10**6; // 20 token
+    ITRC20(token).transfer(user,amount);
+    //user.claimedReward+=amount;
+    emit claimReward(user, amount);
+}
+
+
+
+function sendRewardFood(address user,address token) public {
+    require(tx.origin == owner, "only owner");
+    uint256 amount = 50*10**6; // 20 token
+    ITRC20(token).transfer(user,amount);
+    //user.claimedReward+=amount;
+    emit claimReward(user, amount);
+}
+
+
+
+function sendRewardContainer(address user,address token) public {
+    require(tx.origin == owner, "only owner");
+    uint256 amount = 100*10**6; // 20 token
     ITRC20(token).transfer(user,amount);
     //user.claimedReward+=amount;
     emit claimReward(user, amount);
@@ -144,16 +193,16 @@ function sendRewardCar(address user,address token) public {
  
 function sendRewardPublicTrans(address user,address token) public {
     require(tx.origin == owner, "only owner");
-    uint256 amount = 2*10**19; // 20 token
+    uint256 amount = 2*10**6; // 20 token
     ITRC20(token).transfer(user,amount);
     //user.claimedReward+=amount;
     emit claimReward(user, amount);
 }
 
 
-function sendRewardRecycle(address user,address token) public {
+function sendRewardHeat(address user,address token) public {
     require(tx.origin == owner, "only owner");
-    uint256 amount = 2*10**19; // 20 token
+    uint256 amount = 20*10**6; // 20 token
     ITRC20(token).transfer(user,amount);
     //user.claimedReward+=amount;
     emit claimReward(user, amount);
