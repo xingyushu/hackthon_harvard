@@ -9,8 +9,12 @@ In our ecosystem, we issued our own TRC20 token called ECO and crafted NFT (TRC7
 ### EcoryptoNFT (ECON) (TRC721)
 Our NFT follows the TRC721 ​​standard and stores the images on the Pinata IPFS system. Users can use ECO to mint and buy NFTs, or they can sell NFTs to get ECOs.
 
+[EcoryptoNFT (ECON)](https://shasta.tronscan.org/?_ga=2.16682230.1338761535.1668274246-1179746277.1668274246#/token721/TA5RtpBmV8r1Z6QKdqkG22zUazm16Pa86U)
+
 ### Ecorypto (ECO) (TRC20)
 The total supply is 1000000000 with 6 decimals. Our goal is to make a more eco-friendly environment, and it is crucial that we cannot make huge consumption and carbon emissions when we do the transaction. Tron is a more eco-friendly blockchain compared to the other PoS chain.
+
+[Ecorypto (ECO) Token](https://shasta.tronscan.org/?_ga=2.16682230.1338761535.1668274246-1179746277.1668274246#/token20/TYMeHyQBDot2DNC5Zq1DoFUnfyc3ojRiPC)
 
 ### Users actions reward 
 
