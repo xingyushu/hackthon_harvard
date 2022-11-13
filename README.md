@@ -9,7 +9,7 @@ Structure：
 
  --  Ecorypto： Smart contract code
  
- --  Other： Web-ront related
+ --  Other： Web-front related
 
 
 In our ecosystem, we issued our own TRC20 token called ECO and crafted NFT (TRC721) for the avatar costumes and equipment. Users can use tokens to buy NFTs.
