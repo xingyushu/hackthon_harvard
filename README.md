@@ -26,4 +26,4 @@ C. Record their actions (  Record the users action and reward them)
 
 ###  Frontend
 
-We used bootstrap and tronweb to interact with our smart contracts.
+We used bootstrap and tronweb to interact with our smart contracts.[This is the demo](https://iamjennyzhao.github.io/tron/)
