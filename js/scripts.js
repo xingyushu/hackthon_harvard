@@ -27,3 +27,46 @@ window.addEventListener('DOMContentLoaded', () => {
         scrollPos = currentTop;
     });
 })
+
+function setCookie(username, value, expiry) {
+    const date = new Date();
+    date.setTime(date.getTime() + (expiry * 24 * 60 * 60 * 1000));
+    var expires = "expires="+date.toUTCString();
+    document.cookie = username + "=" + value + ";" + expires + ";path=/";
+}
+
+function getCookie(username) {
+    let name = username + "=";
+    let spli = document.cookie.split(';');
+    for(var j = 0; j < spli.length; j++) {
+      let char = spli[j];
+      while (char.charAt(0) == ' ') {
+        char = char.substring(1);
+      }
+      if (char.indexOf(name) == 0) {
+        return char.substring(name.length, char.length);
+      }
+    }
+    return "";
+}
+
+function checkCookie() {
+    var user = getCookie("username");
+    // checking whether user is null or not
+    if (user != "") {
+        //if user is not null then alert
+        alert("Welcome again " + user);
+    }
+    //if user is null
+    else {
+        //take input from user
+        user = prompt("Please enter your name:", "");
+        //set cookie
+        if (user != "" && user != null) {
+        setCookie("username", user, 365);
+        setCookie("challenges", "000000", 365)
+        }
+    }
+}
+
+checkCookie();
