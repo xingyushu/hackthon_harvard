@@ -1,6 +1,6 @@
 # Ecorypto
 
-### overview
+### Overview
 Ecorypto aims to incentivize users to build a more sustainable lifestyle. By completing up to 4 eco-friendly challenges per day, users can collect eco-coins to purchase and trade accessory NFTs. Users purchase these NFTs to level up and personalize their avatars to show off to friends and family.
 
 
