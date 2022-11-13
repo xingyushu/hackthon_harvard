@@ -70,18 +70,18 @@ function checkCookie() {
     }
 }
 
-checkCookie();
 
 function completeChallenge(num) {
+    console.log("COMPLETED CHALLENGE: " + num);
     challengeString = getCookie("challenges");
     newString = challengeString.substring(0, num-1) + "1" + challengeString.substring(num);
     setCookie("challenges", newString, 365);
+    updateChallenge(num, 0);
 }
 
 function isChallengeCompleted(num) {
     challengeString = getCookie("challenges");
     // newString = challengeString.substring(0, num-1) + "1" + challengeString.substring(num);
-    console.log(challengeString.charAt(num-1));
     return (challengeString.charAt(num-1)=='1');
 }
 
@@ -97,9 +97,3 @@ function updateChallenge(num, cost) {
         element.textContent = "Claim " + cost + " eco-coins!";
     }
 }
-updateChallenge(1, 50);
-updateChallenge(2, 50);
-updateChallenge(3, 100);
-updateChallenge(4, 50);
-updateChallenge(5, 20);
-updateChallenge(6, 20);

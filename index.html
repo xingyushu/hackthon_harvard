@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
     </head>
     <body>
         <!-- Navigation-->
@@ -211,7 +213,7 @@
                                         Verify Completion
                                     </button>
                                     <br><br>
-                                    <button class="btn btn-xl text-uppercase" type="button" id="portfolioModalButton1">
+                                    <button class="btn btn-xl text-uppercase" type="button" onclick="completeChallenge(1)" id="portfolioModalButton1">
                                         Claim 50 eco-coins!
                                     </button>
                                     <br>
@@ -248,7 +250,7 @@
                                         </li>
                                     </ul>
                                     <b>Completed? </b>
-                                    <button class="btn btn-xl text-uppercase" type="button" id="portfolioModalButton2">
+                                    <button class="btn btn-xl text-uppercase" type="button" onclick="completeChallenge(2)" id="portfolioModalButton2">
                                         Claim 50 eco-coins!
                                     </button>
                                     <!-- TODO: Check if collected ^ and also connect with function -->
@@ -286,7 +288,7 @@
                                         </li>
                                     </ul>
                                     <b>Completed? </b>
-                                    <button class="btn btn-xl text-uppercase" type="button" id="portfolioModalButton3">
+                                    <button class="btn btn-xl text-uppercase" type="button" onclick="completeChallenge(3)" id="portfolioModalButton3">
                                         Claim 100 eco-coins!
                                     </button>
                                     <!-- TODO: Check if collected ^ and also connect with function -->
@@ -324,7 +326,7 @@
                                         </li>
                                     </ul>
                                     <b>Completed? </b>
-                                    <button class="btn btn-xl text-uppercase" type="button" id="portfolioModalButton4">
+                                    <button class="btn btn-xl text-uppercase" type="button" onclick="completeChallenge(4)" id="portfolioModalButton4">
                                         Claim 50 eco-coins!
                                     </button>
                                     <!-- TODO: Check if collected ^ and also connect with function -->
@@ -362,7 +364,7 @@
                                         </li>
                                     </ul>
                                     <b>Completed? </b>
-                                    <button class="btn btn-xl text-uppercase" type="button" id="portfolioModalButton5">
+                                    <button class="btn btn-xl text-uppercase" type="button" onclick="completeChallenge(5)" id="portfolioModalButton5">
                                         Claim 20 eco-coins!
                                     </button>
                                     <!-- TODO: Check if collected ^ and also connect with function -->
@@ -400,7 +402,7 @@
                                         </li>
                                     </ul>
                                     <b>Completed? </b>
-                                    <button class="btn btn-xl text-uppercase" type="button" id="portfolioModalButton6">
+                                    <button class="btn btn-xl text-uppercase" type="button" onclick="completeChallenge(6)" id="portfolioModalButton6">
                                         Claim 20 eco-coins!
                                     </button>
                                     <!-- TODO: Check if collected ^ and also connect with function -->
@@ -420,6 +422,14 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <!-- <script src="js/scripts.js"></script> -->
+        <script>checkCookie();
+
+            updateChallenge(1, 50);
+            updateChallenge(2, 50);
+            updateChallenge(3, 100);
+            updateChallenge(4, 50);
+            updateChallenge(5, 20);
+            updateChallenge(6, 20);</script>
     </body>
 </html>
